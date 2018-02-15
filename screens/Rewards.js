@@ -7,7 +7,7 @@ import {
 import { List, ListItem } from 'react-native-elements';
 import { challenges } from '../config/challenges';
 
-class Feed extends Component {
+class Rewards extends Component {
     render() {
         return (
             <ScrollView>
@@ -17,4 +17,4 @@ class Feed extends Component {
     }
 }
 
-export default Feed;
+export default Rewards;

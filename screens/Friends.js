@@ -5,16 +5,17 @@ import {
     ScrollView
 } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
+import Head from '../components/header';
 import { challenges } from '../config/challenges';
 
-class Feed extends Component {
+class Friends extends Component {
     render() {
         return (
             <ScrollView>
                 <Text>Friends</Text>
-            </ScrollView>
+            </ScrollView>  
         )
     }
 }
 
-export default Feed;
+export default Friends;
