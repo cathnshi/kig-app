@@ -1,4 +1,4 @@
-{
+export const challenges = {
     "challenges": [
         {
             "id": 0,

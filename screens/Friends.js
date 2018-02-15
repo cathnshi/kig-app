@@ -11,7 +11,7 @@ class Feed extends Component {
     render() {
         return (
             <ScrollView>
-                <Text>Home</Text>
+                <Text>Friends</Text>
             </ScrollView>
         )
     }
