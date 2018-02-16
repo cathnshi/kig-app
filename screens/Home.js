@@ -6,7 +6,8 @@ import {
     ListView,
     FlatList,
     StyleSheet,
-    TouchableOpacity
+    TouchableOpacity,
+    Image
 } from 'react-native';
 import { List, ListItem, Card } from 'react-native-elements';
 import { challenges } from '../config/challenges';
@@ -51,7 +52,10 @@ class Feed extends Component {
                 >
                 <TouchableOpacity onPress={() => this.onDetailChallenge()}>
                 <Text style={styles.titleText}>{rowData.title}</Text>
+                <View style={styles.coinContainer}>
+                <Image source={require("../assets/img/coin.png")} />
                 <Text style={styles.coinText}>{rowData.coins}</Text>
+                </View>
                 </TouchableOpacity>
                 </Card>
               )
@@ -69,15 +73,20 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     titleText: {
-        fontSize: 34,
-        marginTop: 40,
+        fontSize: 24,
+        marginTop: 20,
         color: '#60D5C7',
     },
     coinText: {
         color: '#EAE466',
         fontSize: 18,
 
-    }
+    },
+    coinContainer: {
+        marginTop: 30,
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        }
 })
 
 
